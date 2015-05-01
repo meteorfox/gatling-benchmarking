@@ -10,7 +10,7 @@ export JVM_OPTS="\
 
 
 HTTP_METHOD='GET'
-HTTP_URLS='http://104.239.169.19:8080,http://104.239.169.19:8080' # Comma separated baseURls
+HTTP_URLS='http://localhost:8080,http://localhost:8080' # Comma separated baseURls
 HTTP_RESOURCE_PATH='/json'
 RUN_NAME='HelloGoLoadBalanced'
 PAGE_NAME='json'
