@@ -52,6 +52,5 @@ SBT_CMD="; set javaOptions ++= Seq(\"-XX:PermSize=512M\", \
 \"-Dloadbalancedworkload.rampDownDurationSecs=${RAMP_DOWN_DURATION_SECS}\", \
 \"-Dgatling.core.outputDirectoryBaseName=${RUN_NAME}\") ; testOnly meteorfox.benchmarks.LoadBalancedOpenModelWorkload"
 
-
-sbt "${SBT_CMD}"
+sbt -batch -offline -no-colors "${SBT_CMD}"
 
